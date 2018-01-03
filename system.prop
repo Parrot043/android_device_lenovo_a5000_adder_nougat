@@ -54,6 +54,26 @@ qemu.hw.mainkeys=1
 ro.camera.sound.forced=0
 ro.audio.silent=0
 
+# CPU
+debug.egl.hw=1 
+debug.egl.profiler=1
+hw3d.force=1
+ro.min_pointer_dur=1
+ro.secure=0
+debug.enabletr=true
+debug.qctwa.preservebuf=1
+dev.pm.dyn_samplingrate=1
+debug.overlayui.enable=1
+ro.fb.mode=1
+persist.sys.use_16bpp_alpha=1
+persist.sys.ui.hw=1
+ro.sf.compbypass.enable=0
+debug.composition.type=gpu
+persist.sys.composition.type=gpu
+persist.android.strictmode=0
+persist.sys.shutdown.mode=hibernate
+ro.config.hw_quickpoweron=true
+
 ro.zygote.preload.enable=0
 
 ro.kernel.zio=38,108,105,16
@@ -81,7 +101,7 @@ ril.flightmode.poweroffMD=1
 ril.telephony.mode=0
 persist.mtk.wcn.combo.chipid=-1
 ril.specific.sm_cause=0
-ro.telephony.ril_class=MediaTekRIL
+ro.telephony.ril_class=SproutRIL
 ro.telephony.ril.config=fakeiccid
 bgw.current3gband=0
 ril.external.md=0
