@@ -13,4 +13,3 @@ index 68cfcbe..f192386 100644
      { 00750, AID_ROOT,      AID_ROOT,      0, "system/bin/uncrypt" },
      { 00750, AID_ROOT,      AID_ROOT,      0, "system/bin/install-recovery.sh" },
 
-
