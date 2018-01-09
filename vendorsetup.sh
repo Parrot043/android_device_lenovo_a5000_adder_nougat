@@ -1,2 +1,2 @@
-add_lunch_combo lineage_giraffe-userdebug
-add_lunch_combo lineage_giraffe-eng
+add_lunch_combo lineage_adder-userdebug
+add_lunch_combo lineage_adder-eng
