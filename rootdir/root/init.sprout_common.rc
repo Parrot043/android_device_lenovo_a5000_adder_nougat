@@ -376,20 +376,24 @@ on post-fs-data
     chmod 0660 /dev/kd_camera_hw
     chmod 0660 /dev/kd_camera_flashlight
     chmod 0660 /dev/kd_camera_hw_bus2
+    chmod 0660 /dev/FM50AF    
     chmod 0660 /dev/DW9714AF
+    chmod 0660 /dev/DW9718AF    
     chmod 0660 /dev/GAF001AF
     chmod 0660 /dev/GAF002AF
     chmod 0660 /dev/GAF008AF
     chmod 0660 /dev/CAM_CAL_DRV
     chmod 0660 /dev/EEPROM_M24C08F
-    chown media media /sys/devices/platform/mt-i2c.1/i2c-1/1-007f/antibanding
+
     chown system camera /dev/camera-sysram
     chown system camera /dev/camera-isp
     chown system camera /dev/camera-pipemgr
     chown system camera /dev/kd_camera_hw
     chown system camera /dev/kd_camera_flashlight
     chown system camera /dev/kd_camera_hw_bus2
+    chown system camera /dev/FM50AF    
     chown system camera /dev/DW9714AF
+    chown system camera /dev/DW9718AF    
     chown system camera /dev/GAF001AF
     chown system camera /dev/GAF002AF
     chown system camera /dev/GAF008AF
