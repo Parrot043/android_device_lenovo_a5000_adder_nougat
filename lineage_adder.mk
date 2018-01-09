@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/highscreen/giraffe
+LOCAL_PATH := device/lenovo/adder
 
 # GPS
 PRODUCT_COPY_FILES += \
