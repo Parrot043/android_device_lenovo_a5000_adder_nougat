@@ -80,7 +80,18 @@ persist.radio.fd.counter=15
 persist.radio.fd.off.counter=5
 persist.radio.fd.r8.counter=15
 persist.radio.fd.off.r8.counter=5
+ro.telephony.ril_class=SproutRIL
+ro.telephony.ril.config=fakeiccid
+ro.gemini.smart_sim_switch=true
+persist.gemini.sim_num=2
+ro.mtk_c2k_support=0
+persist.multisim.config=dsds
 
 # Media
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
+
+# Performance
+#ro.mtk_perf_simple_start_win=1
+#ro.mtk_perf_fast_start_win=1
+#ro.mtk_perf_response_time=1
