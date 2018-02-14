@@ -10,8 +10,8 @@ rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
 # LCD
-ro.sf.lcd_density=240
-persist.sys.lcd_density=240
+ro.sf.lcd_density=320
+persist.sys.lcd_density=320
 
 # OpenGLES
 ro.opengles.version=131072
