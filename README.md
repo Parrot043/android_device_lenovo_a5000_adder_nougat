@@ -9,8 +9,8 @@ Memory  | 1GB RAM
 Shipped Android Version | 4.4.2
 Storage | 4GB
 Battery | 4000 mAh
-Display | 4" 1280 x 720 px
-Camera  | 5MPx
+Display | 5" 1280 x 720 px
+Camera  | 8MPx
 
 ![Lenovo A5000](http://www.vymenaskla.sk/fotky15094/fotos/_vyr_487pic01.jpg)
 
