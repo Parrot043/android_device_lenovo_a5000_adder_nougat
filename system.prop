@@ -97,3 +97,8 @@ ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
 dalvik.vm.checkjni=false
+
+# Power save
+ro.ril.disable.power.collapse=1
+pm.sleep_mode=1
+wifi.supplicant_scan_interval=360
