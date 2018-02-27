@@ -90,6 +90,7 @@ persist.multisim.config=dsds
 # Media
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
+persist.media.treble_omx=false
 
 # Performance
 #ro.mtk_perf_simple_start_win=1
