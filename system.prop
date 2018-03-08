@@ -87,6 +87,9 @@ persist.gemini.sim_num=2
 ro.mtk_c2k_support=0
 persist.multisim.config=dsds
 
+# Wifi
+wifi.interface=wlan0
+
 # Media
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
