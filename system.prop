@@ -94,6 +94,10 @@ wifi.interface=wlan0
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 persist.media.treble_omx=false
+lpa.decode=false
+audio.decoder_override_check=true
+use.non-omx.mp3.decoder=false
+use.non-omx.aac.decoder=false
 
 # Performance
 ro.mtk_perf_simple_start_win=1
