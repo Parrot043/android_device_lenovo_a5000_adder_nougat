@@ -104,4 +104,9 @@ dalvik.vm.checkjni=false
 # Power save
 ro.ril.disable.power.collapse=1
 pm.sleep_mode=1
-wifi.supplicant_scan_interval=360
+wifi.supplicant_scan_interval=180
+usb_wakeup=enable
+proximity_incall=enable
+power_supply.wakeup=enable
+ro.com.google.locationfeatures=1
+ro.com.google.networklocation=1
