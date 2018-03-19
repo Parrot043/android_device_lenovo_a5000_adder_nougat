@@ -50,6 +50,8 @@ ro.mediatek.version.release=ALPS.W10.24.p0
 ro.mediatek.platform=MT6582
 ro.mediatek.version.sdk=1
 ro.crypto.state=unencrypted
+persist.sys.shutdown.mode=hibernate
+ro.config.hw_quickpoweron=true
 
 # Wireless Networks
 wifi.supplicant_scan_interval=15
@@ -107,10 +109,26 @@ dalvik.vm.checkjni=false
 
 # Power save
 ro.ril.disable.power.collapse=1
+ro.com.google.locationfeatures=1
+ro.com.google.networklocation=1
+debug.egl.hw=1 
+debug.egl.profiler=1
 pm.sleep_mode=1
 wifi.supplicant_scan_interval=180
 usb_wakeup=enable
 proximity_incall=enable
 power_supply.wakeup=enable
-ro.com.google.locationfeatures=1
-ro.com.google.networklocation=1
+
+# Telephony
+ro.ril.enable.amr.wideband=1
+ro.ril.hsxpa=2
+ro.ril.gprsclass=10
+ro.ril.hep=1
+ro.ril.enable.dtm=1
+ro.ril.hsdpa.category=10
+ro.ril.enable.a53=1
+ro.ril.enable.3g.prefix=1
+ro.ril.htcmaskw1.bitmask=4294967295
+ro.ril.htcmaskw1=14449
+ro.ril.hsupa.category=5
+ro.ril.set.mtu1472=1
