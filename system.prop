@@ -1,11 +1,11 @@
 #
-# system.prop for sprout
+# system.prop for adder
 #
 
 # TimeZone set
 persist.sys.timezone = Europe/Moscow
 
-# RIL			  
+# RIL
 rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
@@ -45,15 +45,15 @@ ro.boot.selinux=disable
 debug.hwui.render_dirty_regions=false
 
 # MediaTek Hardware
-ro.mediatek.chip_ver=S01
-ro.mediatek.version.release=ALPS.W10.24.p0
-ro.mediatek.platform=MT6582
+ro.mediatek.chip_ver=S030
+ro.mediatek.version.release=ALPS.L1.05.p0
+ro.mediatek.platform=MT6582V
 ro.mediatek.version.sdk=1
 ro.crypto.state=unencrypted
-persist.sys.shutdown.mode=hibernate
-ro.config.hw_quickpoweron=true
+debug.egl.hw=1 
+debug.egl.profiler=1
 
-# Wireless Networks
+# WiFI
 wifi.supplicant_scan_interval=15
 wifi.interface=wlan0
 ro.hardware=sprout
@@ -82,15 +82,7 @@ persist.radio.fd.counter=15
 persist.radio.fd.off.counter=5
 persist.radio.fd.r8.counter=15
 persist.radio.fd.off.r8.counter=5
-ro.telephony.ril_class=SproutRIL
-ro.telephony.ril.config=fakeiccid
-ro.gemini.smart_sim_switch=true
-persist.gemini.sim_num=2
-ro.mtk_c2k_support=0
-persist.multisim.config=dsds
-
-# Wifi
-wifi.interface=wlan0
+ro.ril.enable.amr.wideband=1
 
 # Media
 media.stagefright.legacyencoder=true
@@ -106,29 +98,13 @@ ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
 dalvik.vm.checkjni=false
-
-# Power save
-ro.ril.disable.power.collapse=1
-ro.com.google.locationfeatures=1
-ro.com.google.networklocation=1
-debug.egl.hw=1 
-debug.egl.profiler=1
-pm.sleep_mode=1
-wifi.supplicant_scan_interval=180
 usb_wakeup=enable
 proximity_incall=enable
 power_supply.wakeup=enable
+ro.com.google.locationfeatures=1
+ro.com.google.networklocation=1
 
-# Telephony
-ro.ril.enable.amr.wideband=1
-ro.ril.hsxpa=2
-ro.ril.gprsclass=10
-ro.ril.hep=1
-ro.ril.enable.dtm=1
-ro.ril.hsdpa.category=10
-ro.ril.enable.a53=1
-ro.ril.enable.3g.prefix=1
-ro.ril.htcmaskw1.bitmask=4294967295
-ro.ril.htcmaskw1=14449
-ro.ril.hsupa.category=5
-ro.ril.set.mtu1472=1
+# Power save
+ro.ril.disable.power.collapse=1
+pm.sleep_mode=1
+wifi.supplicant_scan_interval=180
