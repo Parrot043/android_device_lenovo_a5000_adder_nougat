@@ -4,7 +4,7 @@
 
 # MediaTek Chip
 ro.mediatek.chip_ver=S01
-ro.mediatek.version.release=ALPS.KK1.MP1.V2.46
+ro.mediatek.version.release=ALPS.L0.MP2.V1.15_LCSH6582.W.L_P55
 ro.mediatek.platform=MT6582
 ro.mediatek.version.sdk=2
 ro.crypto.state=unencrypted
