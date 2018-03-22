@@ -1,5 +1,5 @@
 #
-# system.prop for adder
+# system.prop for Lenovo A5000
 #
 
 # MediaTek Chip
@@ -8,6 +8,25 @@ ro.mediatek.version.release=ALPS.L0.MP2.V1.15_LCSH6582.W.L_P55
 ro.mediatek.platform=MT6582
 ro.mediatek.version.sdk=2
 ro.crypto.state=unencrypted
+
+# Tweaks
+profiler.force_disable_err_rpt=1
+ro.ril.enable.amr.wideband=1
+profiler.force_disable_ulog=1
+dalvik.vm.execution-mode=int:jit
+windowsmgr.max_events_per_sec=90
+ro.min_pointer_dur=8
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+video.accelerate.hw=1
+debug.performance.tuning=1
+ro.mot.eri.losalert.delay=1000
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+touch.pressure.scale=0.003
+ro.config.hw_fast_dormancy=1
+ro.config.hw_power_saving=1
+
 
 # Telephony
 rild.libpath=/system/lib/mtk-ril.so
@@ -68,11 +87,11 @@ ro.boot.selinux=disable
 
 # Display
 ro.sf.lcd_density=320
-persist.sys.lcd_density=320
 debug.egl.hw=1
 debug.egl.profiler=1
 qemu.hw.mainkeys=1
 ro.opengles.version=131072
+persist.sys.force_highendgfx=true
 
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
