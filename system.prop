@@ -45,10 +45,10 @@ ro.boot.selinux=disable
 debug.hwui.render_dirty_regions=false
 
 # MediaTek Hardware
-ro.mediatek.chip_ver=S030
-ro.mediatek.version.release=ALPS.L1.05.p0
-ro.mediatek.platform=MT6582V
-ro.mediatek.version.sdk=1
+ro.mediatek.chip_ver=S01
+ro.mediatek.version.release=ALPS.KK1.MP1.V2.46
+ro.mediatek.platform=MT6582
+ro.mediatek.version.sdk=2
 ro.crypto.state=unencrypted
 
 # WiFI
@@ -97,6 +97,14 @@ lpa.decode=false
 audio.decoder_override_check=true
 use.non-omx.mp3.decoder=false
 use.non-omx.aac.decoder=false
+
+#Video
+ro.media.dec.aud.flac.enabled=1
+ro.media.dec.vid.avi.enabled=1
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
+ro.media.cam.preview.fps=0
+ro.media.codec_priority_for_thumb=so
 
 # Performance
 ro.mtk_perf_simple_start_win=1
