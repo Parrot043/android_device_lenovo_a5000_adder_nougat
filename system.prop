@@ -2,7 +2,6 @@
 # system.prop for adder
 #
 
-
 # MediaTek Chip
 ro.mediatek.chip_ver=S01
 ro.mediatek.version.release=ALPS.L0.MP2.V1.15_LCSH6582.W.L_P55
