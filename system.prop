@@ -2,60 +2,13 @@
 # system.prop for adder
 #
 
+
 # MediaTek Chip
 ro.mediatek.chip_ver=S01
 ro.mediatek.version.release=ALPS.L0.MP2.V1.15_LCSH6582.W.L_P55
 ro.mediatek.platform=MT6582
 ro.mediatek.version.sdk=2
 ro.crypto.state=unencrypted
-
-# TimeZone set
-persist.sys.timezone = Europe/Moscow
-
-# Display
-ro.sf.lcd_density=320
-persist.sys.lcd_density=320
-qemu.hw.mainkeys=1
-
-# OpenGLES
-ro.opengles.version=131072
-
-# USB MTP
-ro.sys.usb.storage.type=mtp,adb
-ro.sys.usb.bicr=yes
-ro.sys.usb.charging.only=yes
-ro.sys.usb.mtp.whql.enable=0
-
-# Power off opt in IPO
-sys.ipo.pwrdncap=2
-
-# Audio
-ro.camera.sound.forced=0
-ro.audio.silent=0
-
-# Zygote
-ro.zygote.preload.enable=0
-
-# Kernel ZIO
-ro.kernel.zio=38,108,105,16
-
-# Selinux
-ro.boot.selinux=disable
-
-# Disable dirty region for Mali
-debug.hwui.render_dirty_regions=false
-
-# WiFI
-wifi.supplicant_scan_interval=15
-wifi.interface=wlan0
-ro.hardware=sprout
-ro.mediatek.wlan.wsc=1
-ro.mediatek.wlan.p2p=1
-mediatek.wlan.ctia=0
-mediatek.wlan.chip=CONSYS_MT6582
-mediatek.wlan.module.postfix=_consys_mt6582
-wifi.tethering.interface=ap0
-wifi.direct.interface=p2p0
 
 # Telephony
 rild.libpath=/system/lib/mtk-ril.so
@@ -78,6 +31,53 @@ persist.radio.fd.off.counter=50
 persist.radio.fd.r8.counter=150
 persist.radio.fd.off.r8.counter=50
 
+# WiFI
+wifi.supplicant_scan_interval=15
+wifi.interface=wlan0
+ro.hardware=sprout
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+mediatek.wlan.chip=CONSYS_MT6582
+mediatek.wlan.module.postfix=_consys_mt6582
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+
+# Audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+# GPS
+ro.mtk_agps_app=1
+ro.mtk_gps_support=1
+ro.mtk_omacp_support=1
+
+# USB
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp,adb
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+ro.vold.umsdirtyratio=20
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+# Kernel
+ro.zygote.preload.enable=0
+ro.kernel.zio=38,108,105,16
+ro.boot.selinux=disable
+
+# Display
+ro.sf.lcd_density=320
+persist.sys.lcd_density=320
+debug.egl.hw=1
+debug.egl.profiler=1
+qemu.hw.mainkeys=1
+ro.opengles.version=131072
+
+# Disable dirty region for Mali
+debug.hwui.render_dirty_regions=false
+
 # Media / DRM
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
@@ -90,6 +90,13 @@ use.non-omx.mp3.decoder=false
 use.non-omx.aac.decoder=false
 lpa.decode=false
 
+# Memory TRIM
+ro.sys.fw.use_trim_settings=true
+ro.sys.fw.empty_app_percent=50
+ro.sys.fw.trim_empty_percent=100
+ro.sys.fw.trim_cache_percent=100
+ro.sys.fw.trim_enable_memory=1073741824
+
 #Video
 ro.media.dec.aud.flac.enabled=1
 ro.media.dec.vid.avi.enabled=1
@@ -97,13 +104,6 @@ ro.media.dec.aud.wma.enabled=1
 ro.media.dec.vid.wmv.enabled=1
 ro.media.cam.preview.fps=0
 ro.media.codec_priority_for_thumb=so
-
-# Memory TRIM
-ro.sys.fw.use_trim_settings=true
-ro.sys.fw.empty_app_percent=50
-ro.sys.fw.trim_empty_percent=100
-ro.sys.fw.trim_cache_percent=100
-ro.sys.fw.trim_enable_memory=1073741824
 
 # Performance
 ro.mtk_perf_simple_start_win=1
@@ -123,8 +123,6 @@ wifi.supplicant_scan_interval=180
 ro.config.hw_power_saving=1
 ro.ril.power_collapse=1
 ro.ril.disable.power.collapse=0
-debug.egl.hw=1 
-debug.egl.profiler=1
 
 # Use Google DNS
 net.dns1=8.8.8.8
