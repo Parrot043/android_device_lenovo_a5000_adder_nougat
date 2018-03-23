@@ -14,7 +14,6 @@ profiler.force_disable_err_rpt=1
 ro.ril.enable.amr.wideband=1
 profiler.force_disable_ulog=1
 dalvik.vm.execution-mode=int:jit
-windowsmgr.max_events_per_sec=90
 ro.min_pointer_dur=8
 ro.max.fling_velocity=12000
 ro.min.fling_velocity=8000
@@ -91,7 +90,6 @@ debug.egl.hw=1
 debug.egl.profiler=1
 qemu.hw.mainkeys=1
 ro.opengles.version=131072
-persist.sys.force_highendgfx=true
 
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
