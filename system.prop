@@ -26,7 +26,6 @@ touch.pressure.scale=0.003
 ro.config.hw_fast_dormancy=1
 ro.config.hw_power_saving=1
 
-
 # Telephony
 rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
