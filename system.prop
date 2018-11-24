@@ -59,6 +59,10 @@ mediatek.wlan.module.postfix=_consys_mt6582
 wifi.tethering.interface=ap0
 wifi.direct.interface=p2p0
 
+#WFD Eneble
+wfd.dummy.enable=1
+persist.debug.wfd.enable=1
+
 # Audio
 ro.camera.sound.forced=0
 ro.audio.silent=0
